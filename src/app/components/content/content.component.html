@@ -1,0 +1,23 @@
+<nav class="bg-dark navbar-dark mb-2">
+    <div class="container">
+        <a href="" class="navbar-brand"><i class="fa fa-flag mr-2"></i>Blog</a>
+    </div>
+</nav>
+
+<section id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4" *ngFor="let art of searchArticle">
+                <div class="card">
+                    <img src="{{art.image}}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{art.title}}</h5>
+                        <p class="card-text">{{art.content}}</p>
+                        <a href="" class="btn btn-outline-success btn-sm mr-2">Read More</a>
+                        <app-likes></app-likes>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
